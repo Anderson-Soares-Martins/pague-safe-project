@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
-import Button from './Button'
-import menu from '../assets/Menu.svg'
-import ModalMobile from './ModalMobile'
+import React, { useState } from "react";
+import Button from "./Button";
+import menu from "../assets/Menu.svg";
+import ModalMobile from "./ModalMobile";
+import Link from "next/link";
 
 type HeaderProps = {
-  logo: string
-}
+  logo: string;
+};
 
 const Header: React.FC<HeaderProps> = ({ logo }) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleToggleModal = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header className="flex relative flex-wrap gap-5 justify-between w-full text-sm font-bold max-md:max-w-full">
@@ -27,10 +28,14 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
           variant="outline"
           className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl border border-solid max-md:px-5 "
         >
-          Acessar Checkout
+          <Link href="https://app.paguesafe.io/login" passHref>
+            Acessar Checkout
+          </Link>
         </Button>
         <Button className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl max-md:px-5 ">
-          Acessar Gateway
+          <Link href="https://app.paguesafe.io/login" passHref>
+            Acessar Gateway
+          </Link>
         </Button>
       </nav>
       <button className="inline md:hidden" onClick={handleToggleModal}>
@@ -49,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
         </div>
       )}
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

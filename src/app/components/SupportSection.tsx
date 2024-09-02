@@ -1,11 +1,12 @@
-import React from 'react'
-import Button from './Button'
-import arrouUpRight from './../assets/arrow-up-right.svg'
+import React from "react";
+import Button from "./Button";
+import arrouUpRight from "./../assets/arrow-up-right.svg";
 
-import celular from './../assets/imagem-celular-2.svg'
-import bgSound from './../assets/bg-sound-2.svg'
-import bgGreen from './../assets/bg-green-2.svg'
-import { SlideOutSection } from './SlideOutSection'
+import celular from "./../assets/imagem-celular-2.svg";
+import bgSound from "./../assets/bg-sound-2.svg";
+import bgGreen from "./../assets/bg-green-2.svg";
+import { SlideOutSection } from "./SlideOutSection";
+import Link from "next/link";
 
 const SupportSection: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const SupportSection: React.FC = () => {
                   alt="Checkout interface demonstration"
                   className="object-contain grow w-full rounded-none "
                 />
-              </SlideOutSection>{' '}
+              </SlideOutSection>{" "}
               <img
                 loading="lazy"
                 src={celular.src}
@@ -60,22 +61,28 @@ const SupportSection: React.FC = () => {
                 <li>Equipe especializada pronta para atender suas dúvidas.</li>
               </ul>
             </div>
-            <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5 mx-auto sm:mx-0">
-              <span className="self-stretch my-auto">
-                Quero criar minha conta
-              </span>
-              <img
-                loading="lazy"
-                src={arrouUpRight.src}
-                alt=""
-                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-              />
+            <Button className="justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5 mx-auto sm:mx-0">
+              <Link
+                href="https://app.paguesafe.io/register"
+                passHref
+                className="flex gap-2"
+              >
+                <span className="self-stretch my-auto">
+                  Quero criar minha conta
+                </span>
+                <img
+                  loading="lazy"
+                  src={arrouUpRight.src}
+                  alt=""
+                  className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                />
+              </Link>
             </Button>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SupportSection
+export default SupportSection;

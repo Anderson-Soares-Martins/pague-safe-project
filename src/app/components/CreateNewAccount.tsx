@@ -2,6 +2,7 @@ import bgCreateAccount from "./../assets/bg-create-account.svg";
 import Button from "./Button";
 import whatsapp from "./../assets/whatsapp.svg";
 import man from "./../assets/man.svg";
+import Link from "next/link";
 
 const CreateNewAccount: React.FC = () => {
   return (
@@ -22,10 +23,12 @@ const CreateNewAccount: React.FC = () => {
                 <br /> Safe agora mesmo.
               </h2>
               <div className="flex gap-4 justify-center items-center mt-4 z-10">
-                <Button className="flex justify-center bg-[#EFFFFA] items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-                  <span className="self-stretch my-auto">
-                    Criar conta agora
-                  </span>
+                <Button className="flex justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
+                  <Link href="https://app.paguesafe.io/register" passHref>
+                    <span className="self-stretch my-auto">
+                      Criar conta agora
+                    </span>
+                  </Link>
                 </Button>
                 <div>
                   <span className="self-stretch my-auto font-bold">ou</span>

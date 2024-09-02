@@ -1,10 +1,11 @@
-import React from 'react'
-import Button from './Button'
-import celular from './../assets/imagem-celular.svg'
-import bgSound from './../assets/bg-sound.svg'
-import bgGreen from './../assets/bg-green.svg'
-import { SlideOutSection } from './SlideOutSection'
-import arrouUpRight from './../assets/arrow-up-right.svg'
+import React from "react";
+import Button from "./Button";
+import celular from "./../assets/imagem-celular.svg";
+import bgSound from "./../assets/bg-sound.svg";
+import bgGreen from "./../assets/bg-green.svg";
+import { SlideOutSection } from "./SlideOutSection";
+import arrouUpRight from "./../assets/arrow-up-right.svg";
+import Link from "next/link";
 
 const CheckoutSection: React.FC = () => {
   return (
@@ -24,16 +25,22 @@ const CheckoutSection: React.FC = () => {
               Aumente suas vendas oferecendo produtos adicionais. Reconquiste
               clientes que abandonaram seu checkout com envios de e-mail e SMS.
             </p>
-            <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-2 rounded-xl min-h-[45px] max-md:px-5">
-              <span className="self-stretch my-auto">
-                Quero criar minha conta
-              </span>
-              <img
-                loading="lazy"
-                src={arrouUpRight.src}
-                alt=""
-                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-              />
+            <Button className="justify-center items-center self-start px-6 py-3 mt-2 rounded-xl min-h-[45px] max-md:px-5">
+              <Link
+                href="https://app.paguesafe.io/register"
+                passHref
+                className="flex gap-2"
+              >
+                <span className="self-stretch my-auto">
+                  Quero criar minha conta
+                </span>
+                <img
+                  loading="lazy"
+                  src={arrouUpRight.src}
+                  alt=""
+                  className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                />
+              </Link>
             </Button>
           </div>
         </div>
@@ -66,7 +73,7 @@ const CheckoutSection: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CheckoutSection
+export default CheckoutSection;

@@ -1,6 +1,7 @@
 import Button from "./Button";
 import whatsapp from "./../assets/whatsapp.svg";
 import manMobile from "./../assets/man-mobile.svg";
+import Link from "next/link";
 
 const CreateNewAccountMobile: React.FC = () => {
   return (
@@ -16,8 +17,10 @@ const CreateNewAccountMobile: React.FC = () => {
           Quero criar minha conta na Pague Safe agora mesmo.
         </h1>
         <div className="flex flex-col justify-center items-center mt-4 text-sm font-bold gap-2">
-          <Button className="flex justify-center bg-[#EFFFFA] items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-            <span className="self-stretch my-auto">Criar conta agora</span>
+          <Button className="flex justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
+            <Link href="https://app.paguesafe.io/register" passHref>
+              <span className="self-stretch my-auto">Criar conta agora</span>
+            </Link>
           </Button>
           <div>
             <span className="self-stretch hidden sm:inline my-auto font-bold">
