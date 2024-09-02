@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import arrowUp from '../assets/arrow-up.svg'
 
 interface PolicySectionProps {
-  number: string
-  title: string | React.ReactNode
+  number: string | React.ReactNode
+  title: string
   content: string
 }
 
@@ -30,13 +30,11 @@ const PolicySection: React.FC<PolicySectionProps> = ({
         <div className="overflow-hidden gap-2 self-stretch px-2 my-auto w-10 h-10 whitespace-nowrap bg-white rounded-[100px] text-neutral-950 flex items-center justify-center">
           {number}
         </div>
-        {typeof title === 'string' ? (
-          <h2 className="flex-1 shrink self-stretch my-auto text-teal-400 basis-4 max-md:max-w-full">
-            {title}
-          </h2>
-        ) : (
-          title
-        )}
+
+        <h2 className="flex-1 shrink self-stretch my-auto text-teal-400 basis-4 max-md:max-w-full">
+          {title}
+        </h2>
+
         <img
           loading="lazy"
           src={arrowUp.src}
