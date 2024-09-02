@@ -4,6 +4,7 @@ import logo from './../assets/Logo.svg'
 import facebook from './../assets/Facebook.svg'
 import linkedin from './../assets/Linkedin.svg'
 import dc from './../assets/DC.svg'
+import Link from 'next/link'
 
 const Footer: React.FC = () => {
   return (
@@ -51,24 +52,36 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/politicas-de-privacidade"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Privacidade
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/termos-de-uso"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Termos de uso
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/produtos-proibidos"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Produtos proibidos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/aviso-de-cookies"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Aviso de cookies
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,24 +89,30 @@ const Footer: React.FC = () => {
             <h3 className="font-bold text-emerald-500">Suporte</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link href="/faq" className="opacity-50 hover:opacity-100">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/termos-de-compra"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Termos de compra
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link
+                  href="/espaco-do-consumidor"
+                  className="opacity-50 hover:opacity-100"
+                >
                   Espaço do consumidor
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="opacity-50 hover:opacity-100">
+                <Link href="/contato" className="opacity-50 hover:opacity-100">
                   Contato
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
