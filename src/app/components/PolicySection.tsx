@@ -5,14 +5,16 @@ interface PolicySectionProps {
   number?: string | React.ReactNode
   title: string
   content: string
+  defaultExpanded?: boolean
 }
 
 const PolicySection: React.FC<PolicySectionProps> = ({
   number,
   title,
-  content
+  content,
+  defaultExpanded = false
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(defaultExpanded)
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded)
