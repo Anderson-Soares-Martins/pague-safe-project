@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import FeatureSection from '../components/FeatureSection'
-import PartnerSection from '../components/PartnerSection'
-import CheckoutSection from '../components/CheckoutSection'
-import SupportSection from '../components/SupportSection'
-import PricingSection from '../components/PricingSection'
-import ConversionSection from '../components/ConversionSection'
-import CTASection from '../components/CTASection'
-import FAQSection from '../components/FAQSection'
-import Footer from '../components/Footer'
-import banner from '../assets/banner.png'
-import bannerMobile from '../assets/banner-mobile.svg'
-import { FadeInSection } from '../components/FadeInSection'
-import CreateNewAccount from '../components/CreateNewAccount'
-import logo from '../assets/Logo.svg'
-import CreateNewAccountMobile from '../components/CreateNewAccountMobile'
+import React from "react";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import FeatureSection from "../components/FeatureSection";
+import PartnerSection from "../components/PartnerSection";
+import CheckoutSection from "../components/CheckoutSection";
+import SupportSection from "../components/SupportSection";
+import PricingSection from "../components/PricingSection";
+import ConversionSection from "../components/ConversionSection";
+import CTASection from "../components/CTASection";
+import FAQSection from "../components/FAQSection";
+import Footer from "../components/Footer";
+import banner from "../assets/banner.png";
+import bannerMobile from "../assets/banner-mobile.svg";
+import { FadeInSection } from "../components/FadeInSection";
+import CreateNewAccount from "../components/CreateNewAccount";
+import logo from "../assets/Logo.svg";
+import CreateNewAccountMobile from "../components/CreateNewAccountMobile";
 
 export default function HomePage() {
   return (
@@ -85,5 +85,5 @@ export default function HomePage() {
       <CTASection />
       <Footer />
     </div>
-  )
+  );
 }
