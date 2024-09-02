@@ -17,12 +17,14 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
 
   return (
     <header className="flex relative flex-wrap gap-5 justify-between w-full text-sm font-bold max-md:max-w-full">
-      <img
-        loading="lazy"
-        src={logo}
-        alt="Company logo"
-        className="object-contain shrink-0 my-auto max-w-full aspect-[6.13] w-[196px]"
-      />
+      <Link href="/">
+        <img
+          loading="lazy"
+          src={logo}
+          alt="Company logo"
+          className="object-contain shrink-0 my-auto max-w-full aspect-[6.13] w-[196px]"
+        />
+      </Link>
       <nav className="gap-2 items-center hidden sm:flex">
         <Button
           variant="outline"

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Button from "./Button";
 import menu from "../assets/Menu.svg";
 import ModalMobile from "./ModalMobile";
+import Link from "next/link";
+import logo from "@/app/assets/Logo.svg";
 
 interface HeaderSecundaryProps {
   title: string;
@@ -24,12 +26,14 @@ const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
         className="object-cover absolute inset-0 size-full"
       />
       <div className="flex relative flex-wrap gap-5 justify-between w-full text-sm font-bold max-md:max-w-full">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1c097beed4402c02214913b6e60d474137ccbaf5b06d5817abedf5065210306?placeholderIfAbsent=true&apiKey=5a9d282623aa4233aef0b702c2cfebc6"
-          alt="Pague Safe Logo"
-          className="object-contain shrink-0 my-auto max-w-full aspect-[6.13] w-[196px]"
-        />
+        <Link href="/">
+          <img
+            loading="lazy"
+            src={logo.src}
+            alt="Pague Safe Logo"
+            className="object-contain shrink-0 my-auto max-w-full aspect-[6.13] w-[196px]"
+          />
+        </Link>
         <nav className="gap-2 items-center hidden sm:flex">
           <a
             href="#checkout"

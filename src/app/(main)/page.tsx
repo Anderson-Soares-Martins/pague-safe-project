@@ -44,7 +44,7 @@ export default function HomePage() {
           <Hero />
         </div>
         <div className="px-6 sm:px-8 md:px-[50px] lg:px-[60px] w-full flex flex-col">
-          <div className="flex flex-col justify-center items-center mt-28 max-w-full text-center text-teal-50 w-full">
+          <div className="flex flex-col justify-center items-center mt-20 sm:mt-28 max-w-full text-center text-teal-50 w-full">
             <h2 className="self-stretch text-lg font-bold leading-8 text-emerald-500 max-md:max-w-full">
               Mais sobre a Pague Safe
             </h2>
