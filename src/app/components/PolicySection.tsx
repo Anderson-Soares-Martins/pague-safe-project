@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import arrowUp from '../assets/arrow-up.svg'
+import { cn } from '@/lib/utils'
 
 interface PolicySectionProps {
   number?: string | React.ReactNode
@@ -10,6 +11,7 @@ interface PolicySectionProps {
     content: string
   }[]
   defaultExpanded?: boolean
+  gapBottom?: boolean
 }
 
 const PolicySection: React.FC<PolicySectionProps> = ({
@@ -17,9 +19,11 @@ const PolicySection: React.FC<PolicySectionProps> = ({
   title,
   content,
   defaultExpanded = false,
-  sections
+  sections,
+  gapBottom = false
 }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded)
+  console.log(defaultExpanded)
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded)
@@ -28,7 +32,10 @@ const PolicySection: React.FC<PolicySectionProps> = ({
   return (
     <section className="flex flex-col w-full max-md:max-w-full">
       <div
-        className="flex flex-wrap gap-3.5 items-center py-4 w-full font-bold border-t border-b border-teal-50 border-opacity-20 max-md:max-w-full cursor-pointer"
+        className={cn(
+          'flex flex-wrap gap-3.5 items-center py-4 w-full font-bold border-t border-b border-teal-50 border-opacity-20 max-md:max-w-full cursor-pointer',
+          gapBottom && 'border-b-0'
+        )}
         onClick={toggleExpansion}
         role="button"
         tabIndex={0}

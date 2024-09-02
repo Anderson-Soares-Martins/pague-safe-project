@@ -113,6 +113,8 @@ Caso seja identificada a venda de algum desses itens, você estará sujeito a bl
               number={section.number}
               title={section.title}
               content={section.content}
+              defaultExpanded={true}
+              gapBottom
             />
           ))}
           <p className="text-teal-50">

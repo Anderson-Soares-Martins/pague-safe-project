@@ -1,15 +1,15 @@
-"use client";
+'use client'
 
-import React from "react";
-import Header from "./../components/HeaderSecundary";
-import Footer from "./../components/Footer";
-import PolicySection from "./../components/PolicySection";
+import React from 'react'
+import Header from './../components/HeaderSecundary'
+import Footer from './../components/Footer'
+import PolicySection from './../components/PolicySection'
 
 const TermsOfUse: React.FC = () => {
   const policySections = [
     {
-      number: "04",
-      title: "PREÂMBULO DAS PARTES:",
+      number: '04',
+      title: 'PREÂMBULO DAS PARTES:',
       content: `São partes deste instrumento:
 Na qualidade de CONTRATADA: PAGUE SAFE, sediada em Av. Andrômeda, 723 – Alphaville, Barueri – SP, 06473-000, representada como PAGUE SAFE LTDA no seu contrato social.
 Na qualidade de CONTRATANTE: Empresa que afirmar que leu e assinou estes termos de uso.
@@ -62,8 +62,8 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 2.8.1. Caso ocorra a evolução dos limites indicados, o CONTRATANTE deverá integrar ao Sistema de Pagamentos Brasileiro (SPB), submetendo-se ao controle do sistema CIP e respectivas autorizações pelo Banco Central do Brasil.`
     },
     {
-      number: "05",
-      title: "Do registro do usuário",
+      number: '05',
+      title: 'Do registro do usuário',
       content: `5.1 Para se cadastrar, o Usuário deverá informar: Nome completo dos sócios, razão social, e-mail, login e Código de Acesso (Senha). Após o cadastro inicial, o Usuário deverá validar sua conta, informando CPF ou CNPJ, número de telefone, endereço e o(s) produto(s) que irá comercializar. A fim de comprovar a veracidade dos dados informados, o Usuário deverá anexar documentos como RG, CPF, Contrato Social, comprovante de endereço, ou outros que a CONTRATADA solicitar. Caso tais documentos não sejam anexados, o cadastro do Usuário não será concluído.
 
 5.2. Os dados das Contas Bancárias de sua titularidade, para as quais os valores depositados em sua Conta Virtual serão transferidos, não sendo permitido o cadastro e/ou o repasse de valores devidos aos usuários para conta bancária de terceiros.
@@ -100,16 +100,16 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 5.18. O Usuário declara, sob as penas das leis civis e penais brasileiras, que as informações, dados e documentos por ele informados são verdadeiros.`
     },
     {
-      number: "06",
-      title: "Do prazo",
+      number: '06',
+      title: 'Do prazo',
       content: `
       6.1. O presente Contrato é celebrado pelo prazo indicado no Preâmbulo, iniciando-se a partir da ativação do serviço junto à CONTRATANTE.
 
 6.2. Findo o prazo inicial de vigência e não havendo manifestação contrária por escrito de nenhuma das Partes antes deste prazo e nos termos deste Contrato, o presente fica automática e sucessivamente renovado por iguais e sucessivos períodos, com o pagamento da primeira semana subsequente ao vencimento do último pagamento, até que qualquer uma das Partes notifique a outra, por escrito, manifestando sua opção de término, nos termos da Cláusula 11.2 abaixo.`
     },
     {
-      number: "07",
-      title: "Do preço",
+      number: '07',
+      title: 'Do preço',
       content: `
       7.1. Pelos serviços, a CONTRATANTE pagará à CONTRATADA os valores descritos na Tabela de Valores e Tarifas descritas na página inicial do site da CONTRATADA e na parte de ASSINATURA em CONFIGURAÇÕES.
 
@@ -130,8 +130,8 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 7.7. Em caso de renovação e continuidade da concessão de licenças, o preço contratado será reajustado, a cada ano a contar da data inicial do presente Contrato, com base na variação do IGP-M/FGV.`
     },
     {
-      number: "08",
-      title: "Das políticas de chargeback",
+      number: '08',
+      title: 'Das políticas de chargeback',
       content: `8.1. Os eventos de Chargeback do período serão contabilizados no valor total transacionado e descontados automaticamente do valor a receber na Conta do CONTRATANTE.
 
 8.2. Se o CONTRATANTE não dispuser de saldo suficiente em sua Conta, a CONTRATADA está autorizada a reter valores de qualquer outro ingresso futuro de dinheiro em sua Conta, até que o valor devido em razão do cancelamento, reversão ou Chargeback seja compensado.
@@ -163,13 +163,13 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 8.9.1. Os valores eventualmente bloqueados em decorrência do excesso de Chargebacks poderão ser usados a título de compensação pela CONTRATADA para o ressarcimento de eventuais custos, despesas ou danos que lhe foram causados.`
     },
     {
-      number: "09",
-      title: "Prazo de implantação",
+      number: '09',
+      title: 'Prazo de implantação',
       content: `9.1. O prazo de implantação dependerá única e exclusivamente do cumprimento das etapas, prazos e condições estipuladas pelas instituições financeiras para a CONTRATANTE.`
     },
     {
-      number: "10",
-      title: "Das obrigações da contratada",
+      number: '10',
+      title: 'Das obrigações da contratada',
       content: `9.1. Prestar suporte técnico consistente unicamente em informações e orientações sobre a utilização da “PAGUE SAFE”, pelo telefone disponível no site da CONTRATADA: https://www.paguesafe.com e por WhatsApp, em horário comercial, das 8h00 às 18h00, de segunda-feira a sexta-feira, excluídos os feriados. O CONTRATANTE deverá verificar nossa disponibilidade em pontos facultativos.
 
 9.1.1. A CONTRATADA não prestará suporte técnico referente à adaptação do software à programação e/ou site utilizados pela CONTRATANTE.
@@ -193,8 +193,8 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 9.8. A CONTRATADA se responsabiliza, única e exclusivamente, pela integração tecnológica entre a tecnologia de pagamento da PAGUE SAFE e as operadoras financeiras. Quaisquer tipos de danos não provenientes de questões tecnológicas desenvolvidas pela CONTRATADA, não serão de responsabilidade da CONTRATADA. Portanto, a CONTRATADA não será responsável por transações com cartões furtados ou roubados e/ou transações de Chargeback e ataques cibernéticos ocorridos na plataforma, entre outros.`
     },
     {
-      number: "11",
-      title: "Das obrigações da contratante",
+      number: '11',
+      title: 'Das obrigações da contratante',
       content: `10.1. Pagar pontualmente as cobranças, acréscimos referentes às licenças concedidas e/ou serviços opcionais correlatos.
 
 10.2. Providenciar, por sua conta e risco, a seu exclusivo critério e custeio a contratação da utilização dos meios de pagamento junto às operadoras de cartões de crédito e instituições financeiras, responsabilizando-se pelo atendimento das exigências das respectivas instituições, assumindo, expressamente, o risco pela recusa de contratação por parte das operadoras de cartões de crédito e/ou instituições financeiras.
@@ -226,8 +226,8 @@ R$ 20.000.000.000,00 (vinte bilhões de reais) do valor total das transações; 
 10.14. É vedado à CONTRATANTE utilizar a plataforma PAGUE SAFE para qualquer atividade que possa ser considerada ou interpretada como adiantamento de dinheiro, autofinanciamento, lavagem de dinheiro, empréstimo ou outras formas semelhantes definidas em lei, outras atividades ilegais ou consideradas proibidas de acordo com os Termos e Condições. Na ocorrência de qualquer uma destas hipóteses, a CONTRATADA poderá suspender temporária ou definitivamente o serviço e a Conta da CONTRATANTE.`
     },
     {
-      number: "12",
-      title: "Níveis mínimos de serviço",
+      number: '12',
+      title: 'Níveis mínimos de serviço',
       content: `11.1. Os níveis mínimos de serviço, ou Service Level Agreement (“SLA”), indicam o desempenho técnico proposto pela CONTRATADA, no âmbito do Contrato entendido como disponibilização das licenças (PAGUE SAFE) e atendimento aos chamados demandados pela CONTRATANTE, sendo certo que tal acordo não representa diminuição de responsabilidade da CONTRATADA, mas sim indicador de excelência técnica, uma vez que em informática não existe garantia integral (i.e. garantia de 100% (cem por cento), em relação aos níveis de serviço.
 
 11.2. A CONTRATADA, desde que observadas as obrigações a cargo da CONTRATANTE previstas no Contrato e desde que não haja qualquer outro fator que limite ou impossibilite a plena e integral prestação dos serviços objeto do Contrato, tem condição técnica e operacional de oferecer o SLA estabelecido na tabela abaixo, em cada mês civil referente aos serviços de atendimento ao CONTRATANTE:
@@ -258,7 +258,7 @@ Suspensões ou interrupções oriundas de atos, fatos ou omissões de responsabi
 Suspensões ou interrupções oriundas de eventos de casos fortuitos ou força maior.
 Suspensões ou interrupções oriundas de demandas extraordinárias ou incomuns dos serviços objeto do presente Contrato, que eventualmente não sejam suportadas pela estrutura da CONTRATADA.`
     }
-  ];
+  ]
 
   return (
     <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
@@ -271,13 +271,14 @@ Suspensões ou interrupções oriundas de demandas extraordinárias ou incomuns 
               number={section.number}
               title={section.title}
               content={section.content}
+              gapBottom
             />
           ))}
         </section>
       </main>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default TermsOfUse;
+export default TermsOfUse
