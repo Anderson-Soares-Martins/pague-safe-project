@@ -117,7 +117,7 @@ code {
 
 @layer utilities {
   .scroller[data-animated='true'] .scroller__inner {
-    animation: scroll var(--_animation-duration, 40s)
+    animation: scroll var(--_animation-duration, 30s)
       var(--_animation-direction, forwards) linear infinite;
   }
 
@@ -127,7 +127,7 @@ code {
 
   @keyframes scroll {
     to {
-      transform: translateX(calc(-50% - 0.5rem));
+      transform: translateX(calc(-60% - 0.5rem));
     }
   }
 }
