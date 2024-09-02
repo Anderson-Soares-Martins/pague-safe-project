@@ -1,7 +1,7 @@
-import bgCreateAccount from './../assets/bg-create-account.svg'
-import Button from './Button'
-import whatsapp from './../assets/whatsapp.svg'
-import man from './../assets/man.svg'
+import bgCreateAccount from "./../assets/bg-create-account.svg";
+import Button from "./Button";
+import whatsapp from "./../assets/whatsapp.svg";
+import man from "./../assets/man.svg";
 
 const CreateNewAccount: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const CreateNewAccount: React.FC = () => {
         <div className="absolute flex w-full h-full top-0">
           <div className="flex relative w-full px-[81px] items-center">
             <div className="flex flex-col justify-center items-start min-w-[40%] px-4 py-6 bg-[#10C78F] ">
-              <h2 className="text-clamp font-semibold text-start z-10">
+              <h2 className="text-3xl font-semibold text-start z-10">
                 Quero criar minha
                 <br /> conta na Pague
                 <br /> Safe agora mesmo.
@@ -30,7 +30,7 @@ const CreateNewAccount: React.FC = () => {
                 <div>
                   <span className="self-stretch my-auto font-bold">ou</span>
                 </div>
-                <Button className="flex gap-2 justify-center bg-[#EFFFFA] items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
+                <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
                   <img
                     loading="lazy"
                     src={whatsapp.src}
@@ -51,7 +51,7 @@ const CreateNewAccount: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CreateNewAccount
+export default CreateNewAccount;

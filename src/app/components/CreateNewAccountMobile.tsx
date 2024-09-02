@@ -1,6 +1,6 @@
-import Button from './Button'
-import whatsapp from './../assets/whatsapp.svg'
-import manMobile from './../assets/man-mobile.svg'
+import Button from "./Button";
+import whatsapp from "./../assets/whatsapp.svg";
+import manMobile from "./../assets/man-mobile.svg";
 
 const CreateNewAccountMobile: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const CreateNewAccountMobile: React.FC = () => {
               ou
             </span>
           </div>
-          <Button className="flex gap-2 justify-center bg-[#EFFFFA] items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
+          <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
             <img
               loading="lazy"
               src={whatsapp.src}
@@ -36,7 +36,7 @@ const CreateNewAccountMobile: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CreateNewAccountMobile
+export default CreateNewAccountMobile;
