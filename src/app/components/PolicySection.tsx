@@ -1,22 +1,27 @@
-import React, { useState } from 'react'
-import arrowUp from '../assets/arrow-up.svg'
+import React, { useState } from "react";
+import arrowUp from "../assets/arrow-up.svg";
 
 interface PolicySectionProps {
-  number?: string | React.ReactNode
-  title: string
-  content: string
+  number?: string | React.ReactNode;
+  title: string;
+  content: string;
+  sections?: {
+    title: string;
+    content: string;
+  }[];
 }
 
 const PolicySection: React.FC<PolicySectionProps> = ({
   number,
   title,
-  content
+  content,
+  sections
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpansion = () => {
-    setIsExpanded(!isExpanded)
-  }
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <section className="flex flex-col w-full max-md:max-w-full">
@@ -40,23 +45,36 @@ const PolicySection: React.FC<PolicySectionProps> = ({
         <img
           loading="lazy"
           src={arrowUp.src}
-          alt={isExpanded ? 'Collapse section' : 'Expand section'}
+          alt={isExpanded ? "Collapse section" : "Expand section"}
           className={`object-contain shrink-0 self-stretch my-auto w-6 aspect-square transition-transform duration-300 ${
-            isExpanded ? 'rotate-180' : ''
+            isExpanded ? "rotate-180" : ""
           }`}
         />
       </div>
       {isExpanded && (
         <div className="mt-6 text-teal-50 max-md:max-w-full">
-          {content.split('\n\n').map((paragraph, index) => (
+          {content.split("\n\n").map((paragraph, index) => (
             <p key={index} className="mb-4">
               {paragraph}
             </p>
           ))}
+          {sections &&
+            sections.map((section, index) => (
+              <div key={index} className="mb-4">
+                <p className="text-[#2CEAB0] font-bold text-sm">
+                  {section.title}
+                </p>
+                {section.content.split("\n\n").map((paragraph, index) => (
+                  <p key={index} className="mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
         </div>
       )}
     </section>
-  )
-}
+  );
+};
 
-export default PolicySection
+export default PolicySection;

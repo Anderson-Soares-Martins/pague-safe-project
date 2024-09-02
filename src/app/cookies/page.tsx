@@ -29,16 +29,56 @@ const PrivacyPolicy: React.FC = () => {
       content: `Classificamos, de acordo com o uso, os cookies em: essenciais, desempenho, funcionalidade e publicidade.
 Vejamos as características de cada um desses tipos de cookies:`,
       sections: [
-        { title: "", content: `` },
-        { title: "", content: `` },
-        { title: "", content: `` },
-        { title: "", content: `` }
+        {
+          title: "Essenciais",
+          content: `
+          São cookies necessários para o correto funcionamento de nossas Plataformas, responsáveis, por exemplo, pela manutenção de sessões ativas ou a definição de opções de configuração.
+Esses cookies não identificam os usuários, e caso o usuário opte por bloqueá-los diretamente no navegador, nossas Plataformas poderão ficar indisponíveis a este usuário.
+          `
+        },
+        {
+          title: "Desempenho",
+          content: `Esse tipo de cookie permite que a Pague Safe compreenda como o usuário interage com as nossas Plataformas. São realizadas coletas de dados de performance, tais como número de visitas, áreas acessadas, duração de acessos e mensagens de erro.
+Os cookies de performance são coletados e tratados de forma anônima e caso o usuário os desative, nossas Plataformas poderão ficar indisponíveis a este usuário.`
+        },
+        {
+          title: "Funcionalidade",
+          content: `São cookies que permitem funcionalidades de personalização para os usuários das Plataformas, guardando e fornecendo escolhas de navegação, tais como idioma, região, login. Por envolver as opções e preferências do usuário, esses cookies podem, dependendo da circunstância, ajudar a identificá-lo.
+Caso sejam desativados, algumas opções das Plataformas podem ficar indisponíveis.`
+        },
+        {
+          title: "Publicidade",
+          content: `Esses cookies possuem a capacidade de direcionar o conteúdo de marketing de nossas Plataformas de acordo com o perfil de acesso de cada usuário, por meio da coleta de alguns dados pessoais dos usuários.
+
+Caso o usuário desative os cookies, não será possível proporcionar conteúdos com base nos seus interesses.
+
+Os tipos de cookies vistos acima, podem ainda ser classificados quanto à duração de armazenamento e quanto a quem os administra:
+
+• Os cookies não-persistentes são utilizados apenas enquanto o usuário navega em nosso site. Os navegadores os apagam logo após você fechar o nosso site. Já os cookies persistentes permanecem no navegador por maior período, sendo mantidos mesmo após o término da navegação em nosso site.
+
+• Utilizamos em nossos sites tanto cookies persistentes quanto não-persistentes.
+
+• Possuímos cookies próprios, emitidos pela Pague Safe e cookies de terceiros, que são administrados por empresas parceiras, ambos os tipos estão indicados na lista de cookies.
+
+• Utilizamos cookies próprios e de terceiros em todos os nossos sites, conforme suas preferências.
+Veja todos os cookies que utilizamos, acessando o nosso Portal de Preferências de Cookies, no rodapé do nosso site.`
+        }
       ]
     },
     {
       number: "05",
       title: "Não quero permitir a coleta de Cookies, o que posso fazer?",
-      content: ``
+      content: `
+      O usuário das Plataformas poderá desativar alguns dos cookies, através do Painel de Preferências de Cookies ou pode realizar a configuração do seu navegador, podendo:
+
+      
+a) ativar o modo de navegação sigilosa, disponível na maior parte dos navegadores, o qual permite que nenhum cookie permaneça no dispositivo do usuário após fechar a janela do navegador; ou
+      
+
+      b) configurar o bloqueio de cookies, nos limites e conforme instruções do navegador do usuário.
+
+      Os navegadores também permitem que o usuário exclua os cookies que já estejam armazenados em seu computador.
+Ressaltamos que, caso o usuário opte por não permitir a utilização de cookies, nossas Plataformas poderão não funcionar corretamente, e as suas funcionalidades também poderão tornar-se parcial ou totalmente indisponíveis.`
     }
   ];
 
@@ -59,6 +99,7 @@ Vejamos as características de cada um desses tipos de cookies:`,
               number={section.number}
               title={section.title}
               content={section.content}
+              sections={section.sections}
             />
           ))}
         </section>
