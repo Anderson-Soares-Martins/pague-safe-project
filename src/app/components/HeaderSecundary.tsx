@@ -1,7 +1,11 @@
-import React from 'react'
-import bgHeaderSecundary from '../assets/bg-header-secundary.png'
+import React from "react";
+import bgHeaderSecundary from "../assets/bg-header-secundary.png";
 
-const HeaderSecundary: React.FC = () => {
+interface HeaderSecundaryProps {
+  title: string;
+}
+
+const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
   return (
     <header className="flex overflow-hidden relative flex-col px-20 py-16 w-full min-h-[266px] max-md:px-5 max-md:max-w-full">
       <img
@@ -33,10 +37,10 @@ const HeaderSecundary: React.FC = () => {
         </nav>
       </div>
       <h1 className="relative self-center mt-20 text-3xl font-semibold leading-loose text-center text-teal-50 max-md:mt-10">
-        Política de privacidade
+        {title}
       </h1>
     </header>
-  )
-}
+  );
+};
 
-export default HeaderSecundary
+export default HeaderSecundary;
