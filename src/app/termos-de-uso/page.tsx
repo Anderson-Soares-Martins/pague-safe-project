@@ -263,7 +263,7 @@ Suspensões ou interrupções oriundas de demandas extraordinárias ou incomuns 
     <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
       <Header title="Termos de uso" />
       <main className="flex flex-col items-center w-full max-md:max-w-full">
-        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[874px] max-md:mt-10">
+        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[90%] lg:w-[70%] max-md:mt-10">
           {policySections.map((section, index) => (
             <PolicySection
               key={index}

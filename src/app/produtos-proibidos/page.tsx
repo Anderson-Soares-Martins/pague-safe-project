@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Header from '../components/HeaderSecundary'
-import Footer from '../components/Footer'
-import PolicySection from '../components/PolicySection'
-import { BanIcon } from 'lucide-react'
+import React from "react";
+import Header from "../components/HeaderSecundary";
+import Footer from "../components/Footer";
+import PolicySection from "../components/PolicySection";
+import { BanIcon } from "lucide-react";
 
 const BlockedProducts: React.FC = () => {
   const blockedProductsSections = [
     {
       number: <BanIcon className="text-red-600  " />,
-      title: 'Produtos proibidos',
+      title: "Produtos proibidos",
       content: `
 • Antenas de TV e dispositivos para decodificação de sinais;
 
@@ -76,7 +76,7 @@ Caso seja identificada a venda de algum desses itens, você estará sujeito a bl
     },
     {
       number: <BanIcon className="text-red-600  " />,
-      title: 'Lista de produtos altamente proibidos',
+      title: "Lista de produtos altamente proibidos",
       content: `
 • Lotes de produtos, lotes de leilão, lotes de correio;
 
@@ -86,13 +86,13 @@ Caso seja identificada a venda de algum desses itens, você estará sujeito a bl
 
 Caso seja identificada a venda de algum desses itens, você estará sujeito a bloqueio da conta, sendo descredenciado da plataforma.`
     }
-  ]
+  ];
 
   return (
     <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
       <Header title="Produtos Proibidos" />
       <main className="flex flex-col items-center w-full max-md:max-w-full">
-        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[874px] max-md:mt-10 text-teal-50 gap-4">
+        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[90%] lg:w-[70%] max-md:mt-10 text-teal-50 gap-4">
           <p className="text-teal-400 font-bold">Lista de produtos proibidos</p>
           <p>
             Lista de produtos proibidos Produtos que não podem ser
@@ -127,7 +127,7 @@ Caso seja identificada a venda de algum desses itens, você estará sujeito a bl
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default BlockedProducts
+export default BlockedProducts;

@@ -86,7 +86,7 @@ Ressaltamos que, caso o usuário opte por não permitir a utilização de cookie
     <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
       <Header title="Aviso de cookies" />
       <main className="flex flex-col items-center w-full max-md:max-w-full">
-        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[874px] max-md:mt-10">
+        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[90%] lg:w-[70%] max-md:mt-10">
           <p className="mb-4 text-teal-50">
             Para a Pague Safe transparência é fundamental, por isso, preparamos
             este aviso para informar de forma clara e direta como e em que

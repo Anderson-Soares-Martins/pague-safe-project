@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Header from './../components/HeaderSecundary'
-import Footer from './../components/Footer'
-import PolicySection from './../components/PolicySection'
+import React from "react";
+import Header from "./../components/HeaderSecundary";
+import Footer from "./../components/Footer";
+import PolicySection from "./../components/PolicySection";
 
 const PrivacyPolicy: React.FC = () => {
   const policySections = [
     {
-      number: '01',
-      title: 'Introdução',
+      number: "01",
+      title: "Introdução",
       content: `Esta Política de Privacidade ("Política") se aplica a todos os serviços prestados pela PAGUE SAFE LTDA, pessoa jurídica de direito privado, com sede na cidade de Cubatão, no Estado de São Paulo, Av. Andrômeda, 723 – Alphaville, Barueri – SP, 06473-0000, inscrita no CNPJ/MF sob o no 31.699.157/0001-80 ("PAGUE SAFE").
 
 Visando proteger a sua privacidade, além de garantir a liberdade e o exercício de direitos ao titular de dados, a PAGUE SAFE apresenta a presente Política de Privacidade. Este documento tem o objetivo de informar, de forma clara e objetiva, sobre como é realizada a coleta, tratamento e armazenamento de dados pessoais essenciais para a prestação de seus serviços.
@@ -18,8 +18,8 @@ O titular dos dados pessoais declara-se ciente com esta Política e dá expresso
 Caso o usuário seja Pessoa Jurídica, algumas condições previstas nesta Política poderão não ser aplicáveis, nos termos da Lei 13.709/2018.`
     },
     {
-      number: '02',
-      title: 'Conceito',
+      number: "02",
+      title: "Conceito",
       content: `Sem prejuízo de outras definições constantes nesta Política, as palavras e expressões abaixo indicadas, sempre que utilizadas pela primeira letra maiúscula, terão as seguintes definições:
 
 "LGPD": Lei Geral de Proteção de Dados, a legislação brasileira no 13.709/2018, que regula o tratamento, proteção e privacidade de Dados Pessoais. Este documento estabelece diretrizes importantes e obrigatórias para a coleta, processamento e armazenamento de dados pessoais.
@@ -35,8 +35,8 @@ Caso o usuário seja Pessoa Jurídica, algumas condições previstas nesta Polí
 "Encarregado de dados": pessoa indicada pelo controlador e operador para atuar como canal de comunicação entre o controlador, os Titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD);`
     },
     {
-      number: '03',
-      title: 'Dados pessoais tratados pela Pague Safe e suas finalidades',
+      number: "03",
+      title: "Dados pessoais tratados pela Pague Safe e suas finalidades",
       content: `A PAGUE SAFE valoriza a sua confiança e se compromete a tratar os dados pessoais coletados observando os preceitos legais, a boa-fé e os princípios estritos da finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não discriminação, e responsabilização e prestação de contas.
 
 A coleta de Dados Pessoais pode variar conforme o tipo de interação do Usuário com o site. Esses dados pessoais podem ser coletados diretamente do Usuário ou coletados automaticamente. A coleta dos dados pessoais pode ser realizada através dos seguintes meios:
@@ -66,15 +66,15 @@ A coleta de Dados Pessoais pode variar conforme o tipo de interação do Usuári
 A PAGUE SAFE também pode obter Informações Pessoais a partir de bancos de dados privados, com base no seu legítimo interesse e para cumprir obrigações regulatórias e contratuais. O website e serviços de internet da organização podem utilizar informações do dispositivo, dados de uso técnico e localização geográfica do usuário.`
     },
     {
-      number: '04',
-      title: 'Compartilhamento de dados pessoais',
+      number: "04",
+      title: "Compartilhamento de dados pessoais",
       content: `Os dados pessoais do titular podem ser compartilhados com parceiros e fornecedores para garantir as medidas contratadas; com autoridades competentes, quando requisitado, para apuração de condutas ilícitas; para proteção dos interesses da PAGUE SAFE em qualquer tipo de conflito, incluindo ações judiciais; em operações societárias que envolvam a PAGUE SAFE, como por exemplo, fusão, cisão, aquisição ou incorporação de empresas.
 
 Ao compartilhar os dados, todas as medidas técnicas e organizacionais adequadas serão adotadas, visando à privacidade, confidencialidade e integridade das informações. Da mesma forma, sempre será exigido dos envolvidos nessa forma de tratamento, o cumprimento das mesmas diretrizes de segurança e proteção de Dados Pessoais exigidas pela legislação.`
     },
     {
-      number: '05',
-      title: 'Diretrizes de armazenamento e exclusão de dados pessoais',
+      number: "05",
+      title: "Diretrizes de armazenamento e exclusão de dados pessoais",
       content: `A LGPD busca empoderar e dar mais autonomia ao titular dos dados pessoais e, para isso, em seu artigo 18, determina um rol de direitos a serem exercidos pelo titular dos dados. São esses direitos:
 
 • Confirmação da existência de tratamento de dados pessoais;
@@ -112,8 +112,8 @@ Ademais, cabe ao titular dos dados pessoais que se encarregue de:
 • Cumprir todas as determinações e procedimentos previstos nesta Política;`
     },
     {
-      number: '07',
-      title: 'Medidas de segurança',
+      number: "07",
+      title: "Medidas de segurança",
       content: `As Informações Pessoais coletadas pela PAGUE SAFE são armazenadas em servidores seguros, fazendo uso de mecanismos criptográficos, com a utilização de medidas de segurança de informação constantemente atualizadas. As informações serão mantidas confidenciais e serão adotadas todas as medidas possíveis contra perda, roubo, uso indevido, alteração e acesso não autorizado.
 
 A PAGUE SAFE emprega padrões de segurança avançados, incluindo firewalls, antivírus e outros softwares que auxiliam na proteção de hackers e o não vazamento das informações pessoais armazenadas.
@@ -132,13 +132,13 @@ Qualquer dúvida em relação a esta Política de Privacidade ou solicitação r
 
 PAGUE SAFE LTDA.`
     }
-  ]
+  ];
 
   return (
     <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
       <Header title="Política de privacidade" />
       <main className="flex flex-col items-center w-full max-md:max-w-full">
-        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[874px] max-md:mt-10">
+        <section className="flex flex-col my-16 max-w-full text-sm leading-6 w-[90%] lg:w-[70%] max-md:mt-10">
           {policySections.map((section, index) => (
             <PolicySection
               key={index}
@@ -152,7 +152,7 @@ PAGUE SAFE LTDA.`
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default PrivacyPolicy
+export default PrivacyPolicy;
