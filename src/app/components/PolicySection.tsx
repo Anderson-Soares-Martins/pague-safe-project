@@ -5,6 +5,10 @@ interface PolicySectionProps {
   number?: string | React.ReactNode
   title: string
   content: string
+  sections?: {
+    title: string
+    content: string
+  }[]
   defaultExpanded?: boolean
 }
 
@@ -12,7 +16,8 @@ const PolicySection: React.FC<PolicySectionProps> = ({
   number,
   title,
   content,
-  defaultExpanded = false
+  defaultExpanded = false,
+  sections
 }) => {
   const [isExpanded, setIsExpanded] = useState(defaultExpanded)
 
@@ -55,6 +60,19 @@ const PolicySection: React.FC<PolicySectionProps> = ({
               {paragraph}
             </p>
           ))}
+          {sections &&
+            sections.map((section, index) => (
+              <div key={index} className="mb-4">
+                <p className="text-[#2CEAB0] font-bold text-sm">
+                  {section.title}
+                </p>
+                {section.content.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="mb-4">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ))}
         </div>
       )}
     </section>
