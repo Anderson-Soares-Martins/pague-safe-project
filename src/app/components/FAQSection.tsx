@@ -1,47 +1,47 @@
-import React, { useState, useRef } from "react";
-import TitleSection from "./TitleSection";
-import plusCircle from "./../assets/plus-circle.svg";
+import React, { useState, useRef } from 'react'
+import TitleSection from './TitleSection'
+import plusCircle from './../assets/plus-circle.svg'
 
 type FAQItem = {
-  question: string;
-  answer: string;
-};
+  question: string
+  answer: string
+}
 
 const faqItems: FAQItem[] = [
   {
-    question: "O que é gateway de pagamento?",
+    question: 'O que é gateway de pagamento?',
     answer:
-      "Um gateway de pagamento é um serviço que processa transações de cartão de crédito para empresas online e físicas."
+      'Um gateway de pagamento é um serviço que processa transações de cartão de crédito para empresas online e físicas.'
   },
   {
-    question: "Na Pague Safe tenho um gerente de conta?",
+    question: 'Na Pague Safe tenho um gerente de conta?',
     answer:
-      "Sim, na Pague Safe você terá um gerente de conta dedicado para auxiliar em todas as suas necessidades."
+      'Sim, na Pague Safe você terá um gerente de conta dedicado para auxiliar em todas as suas necessidades.'
   },
   {
-    question: "Qual a taxa de aprovação?",
+    question: 'Qual a taxa de aprovação?',
     answer:
-      "Nossa taxa de aprovação média é de 98,4%, uma das mais altas do mercado."
+      'Nossa taxa de aprovação média é de 98,4%, uma das mais altas do mercado.'
   },
   {
-    question: "Minha conta será bloqueada se eu vender infoproduto?",
+    question: 'Minha conta será bloqueada se eu vender infoproduto?',
     answer:
-      "Não, a Pague Safe aceita a venda de infoprodutos, desde que estejam em conformidade com nossas políticas."
+      'Não, a Pague Safe aceita a venda de infoprodutos, desde que estejam em conformidade com nossas políticas.'
   },
   {
-    question: "A Pague Safe funciona para meu e-commerce?",
+    question: 'A Pague Safe funciona para meu e-commerce?',
     answer:
-      "Sim, a Pague Safe é compatível com a maioria das plataformas de e-commerce e pode ser facilmente integrada ao seu negócio online."
+      'Sim, a Pague Safe é compatível com a maioria das plataformas de e-commerce e pode ser facilmente integrada ao seu negócio online.'
   }
-];
+]
 
 const FAQSection: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const contentRefs = useRef<(HTMLDivElement | null)[]>([])
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   return (
     <section className="flex flex-col mt-24 max-w-full text-base font-medium tracking-tight leading-none text-teal-50 w-full max-md:mt-10 ">
@@ -66,25 +66,27 @@ const FAQSection: React.FC = () => {
               </div>
               <img
                 loading="lazy"
-                src={plusCircle}
+                src={plusCircle.src}
                 alt=""
                 className={`object-contain shrink-0 self-stretch my-auto w-6 aspect-square transition-transform ${
-                  openIndex === index ? "transform rotate-180" : ""
+                  openIndex === index ? 'transform rotate-180' : ''
                 }`}
               />
             </button>
             <div
-              ref={(el) => (contentRefs.current[index] = el)}
+              ref={(el) => {
+                contentRefs.current[index] = el
+              }}
               className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${
                 openIndex === index
-                  ? "max-h-96 opacity-100"
-                  : "max-h-0 opacity-0"
+                  ? 'max-h-96 opacity-100'
+                  : 'max-h-0 opacity-0'
               }`}
               style={{
                 maxHeight:
                   openIndex === index
                     ? `${contentRefs.current[index]?.scrollHeight}px`
-                    : "0"
+                    : '0'
               }}
             >
               <div className="mt-4 text-sm opacity-70">{item.answer}</div>
@@ -93,7 +95,7 @@ const FAQSection: React.FC = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FAQSection;
+export default FAQSection

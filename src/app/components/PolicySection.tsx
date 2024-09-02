@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import arrowUp from "@/assets/arrow-up.svg";
+import React, { useState } from 'react'
+import arrowUp from '../assets/arrow-up.svg'
 
 interface PolicySectionProps {
-  number: string;
-  title: string;
-  content: string;
+  number: string
+  title: string
+  content: string
 }
 
 const PolicySection: React.FC<PolicySectionProps> = ({
@@ -12,11 +12,11 @@ const PolicySection: React.FC<PolicySectionProps> = ({
   title,
   content
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false)
 
   const toggleExpansion = () => {
-    setIsExpanded(!isExpanded);
-  };
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <section className="flex flex-col w-full max-md:max-w-full">
@@ -35,16 +35,16 @@ const PolicySection: React.FC<PolicySectionProps> = ({
         </h2>
         <img
           loading="lazy"
-          src={arrowUp}
-          alt={isExpanded ? "Collapse section" : "Expand section"}
+          src={arrowUp.src}
+          alt={isExpanded ? 'Collapse section' : 'Expand section'}
           className={`object-contain shrink-0 self-stretch my-auto w-6 aspect-square transition-transform duration-300 ${
-            isExpanded ? "rotate-180" : ""
+            isExpanded ? 'rotate-180' : ''
           }`}
         />
       </div>
       {isExpanded && (
         <div className="mt-6 text-teal-50 max-md:max-w-full">
-          {content.split("\n\n").map((paragraph, index) => (
+          {content.split('\n\n').map((paragraph, index) => (
             <p key={index} className="mb-4">
               {paragraph}
             </p>
@@ -52,7 +52,7 @@ const PolicySection: React.FC<PolicySectionProps> = ({
         </div>
       )}
     </section>
-  );
-};
+  )
+}
 
-export default PolicySection;
+export default PolicySection

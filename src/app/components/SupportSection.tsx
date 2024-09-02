@@ -1,11 +1,11 @@
-import React from "react";
-import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import React from 'react'
+import Button from './Button'
+import arrouUpRight from './../assets/arrow-up-right.svg'
 
-import celular from "./../assets/imagem-celular-2.svg";
-import bgSound from "./../assets/bg-sound-2.svg";
-import bgGreen from "./../assets/bg-green-2.svg";
-import { SlideOutSection } from "./SlideOutSection";
+import celular from './../assets/imagem-celular-2.svg'
+import bgSound from './../assets/bg-sound-2.svg'
+import bgGreen from './../assets/bg-green-2.svg'
+import { SlideOutSection } from './SlideOutSection'
 
 const SupportSection: React.FC = () => {
   return (
@@ -16,21 +16,21 @@ const SupportSection: React.FC = () => {
             <div className="w-full h-fit relative overflow-hidden rounded-[40px]">
               <img
                 loading="lazy"
-                src={bgSound}
+                src={bgSound.src}
                 alt="Checkout interface demonstration"
                 className="object-contain grow w-full rounded-none absolute"
               />
               <SlideOutSection>
                 <img
                   loading="lazy"
-                  src={bgGreen}
+                  src={bgGreen.src}
                   alt="Checkout interface demonstration"
                   className="object-contain grow w-full rounded-none "
                 />
-              </SlideOutSection>{" "}
+              </SlideOutSection>{' '}
               <img
                 loading="lazy"
-                src={celular}
+                src={celular.src}
                 alt="Checkout interface demonstration"
                 className="object-contain grow w-[90%] h-[90%] rounded-none absolute bottom-0 left-0"
               />
@@ -66,7 +66,7 @@ const SupportSection: React.FC = () => {
               </span>
               <img
                 loading="lazy"
-                src={arrouUpRight}
+                src={arrouUpRight.src}
                 alt=""
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
               />
@@ -75,7 +75,7 @@ const SupportSection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SupportSection;
+export default SupportSection

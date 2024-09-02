@@ -1,14 +1,14 @@
-import React from "react";
-import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
-import bgSoundRequest from "./../assets/bg-sound-request.svg";
+import React from 'react'
+import Button from './Button'
+import arrouUpRight from './../assets/arrow-up-right.svg'
+import bgSoundRequest from './../assets/bg-sound-request.svg'
 
 const CTASection: React.FC = () => {
   return (
     <section className="flex overflow-hidden relative flex-col justify-center items-center self-stretch px-20 py-32 mt-40 w-full min-h-[519px] text-teal-950">
       <img
         loading="lazy"
-        src={bgSoundRequest}
+        src={bgSoundRequest.src}
         alt=""
         className="object-cover absolute inset-0 size-full"
       />
@@ -27,7 +27,7 @@ const CTASection: React.FC = () => {
             </span>
             <img
               loading="lazy"
-              src={arrouUpRight}
+              src={arrouUpRight.src}
               alt=""
               className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
             />
@@ -35,7 +35,7 @@ const CTASection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CTASection;
+export default CTASection

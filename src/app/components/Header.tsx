@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import Button from "./Button";
-import menu from "@/assets/Menu.svg";
-import ModalMobile from "./ModalMobile";
+import React, { useState } from 'react'
+import Button from './Button'
+import menu from '../assets/Menu.svg'
+import ModalMobile from './ModalMobile'
 
 type HeaderProps = {
-  logo: string;
-};
+  logo: string
+}
 
 const Header: React.FC<HeaderProps> = ({ logo }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const handleToggleModal = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <header className="flex relative flex-wrap gap-5 justify-between w-full text-sm font-bold max-md:max-w-full">
@@ -34,7 +34,12 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
         </Button>
       </nav>
       <button className="inline md:hidden" onClick={handleToggleModal}>
-        <img loading="lazy" src={menu} alt="Menu" className="object-contain" />
+        <img
+          loading="lazy"
+          src={menu.src}
+          alt="Menu"
+          className="object-contain"
+        />
       </button>
 
       {/* Modal */}
@@ -44,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
         </div>
       )}
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

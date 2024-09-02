@@ -1,10 +1,10 @@
-import React from "react";
-import Button from "./Button";
-import celular from "./../assets/imagem-celular.svg";
-import bgSound from "./../assets/bg-sound.svg";
-import bgGreen from "./../assets/bg-green.svg";
-import { SlideOutSection } from "./SlideOutSection";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import React from 'react'
+import Button from './Button'
+import celular from './../assets/imagem-celular.svg'
+import bgSound from './../assets/bg-sound.svg'
+import bgGreen from './../assets/bg-green.svg'
+import { SlideOutSection } from './SlideOutSection'
+import arrouUpRight from './../assets/arrow-up-right.svg'
 
 const CheckoutSection: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ const CheckoutSection: React.FC = () => {
               </span>
               <img
                 loading="lazy"
-                src={arrouUpRight}
+                src={arrouUpRight.src}
                 alt=""
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
               />
@@ -42,14 +42,14 @@ const CheckoutSection: React.FC = () => {
             <div className="w-full h-fit relative overflow-hidden rounded-[40px]">
               <img
                 loading="lazy"
-                src={bgSound}
+                src={bgSound.src}
                 alt="Checkout interface demonstration"
                 className="object-contain grow w-full rounded-none absolute"
               />
               <SlideOutSection>
                 <img
                   loading="lazy"
-                  src={bgGreen}
+                  src={bgGreen.src}
                   alt="Checkout interface demonstration"
                   className="object-contain grow w-full rounded-none "
                 />
@@ -58,7 +58,7 @@ const CheckoutSection: React.FC = () => {
 
             <img
               loading="lazy"
-              src={celular}
+              src={celular.src}
               alt="Checkout interface demonstration"
               className="object-contain grow w-full h-full rounded-none absolute top-0"
             />
@@ -66,7 +66,7 @@ const CheckoutSection: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CheckoutSection;
+export default CheckoutSection

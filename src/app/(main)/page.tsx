@@ -1,30 +1,32 @@
-import React from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import FeatureSection from "../components/FeatureSection";
-import PartnerSection from "../components/PartnerSection";
-import CheckoutSection from "../components/CheckoutSection";
-import SupportSection from "../components/SupportSection";
-import PricingSection from "../components/PricingSection";
-import ConversionSection from "../components/ConversionSection";
-import CTASection from "../components/CTASection";
-import FAQSection from "../components/FAQSection";
-import Footer from "../components/Footer";
-import banner from "../assets/banner.png";
-import bannerMobile from "../assets/banner-mobile.svg";
-import { FadeInSection } from "@/components/FadeInSection";
-import CreateNewAccount from "@/components/CreateNewAccount";
-import logo from "@/assets/Logo.svg";
-import CreateNewAccountMobile from "@/components/CreateNewAccountMobile";
+'use client'
 
-const HomePage: React.FC = () => {
+import React from 'react'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import FeatureSection from '../components/FeatureSection'
+import PartnerSection from '../components/PartnerSection'
+import CheckoutSection from '../components/CheckoutSection'
+import SupportSection from '../components/SupportSection'
+import PricingSection from '../components/PricingSection'
+import ConversionSection from '../components/ConversionSection'
+import CTASection from '../components/CTASection'
+import FAQSection from '../components/FAQSection'
+import Footer from '../components/Footer'
+import banner from '../assets/banner.png'
+import bannerMobile from '../assets/banner-mobile.svg'
+import { FadeInSection } from '../components/FadeInSection'
+import CreateNewAccount from '../components/CreateNewAccount'
+import logo from '../assets/Logo.svg'
+import CreateNewAccountMobile from '../components/CreateNewAccountMobile'
+
+export default function HomePage() {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-[#09160F]">
       <main className="flex overflow-hidden flex-col self-stretch pb-48 w-full">
         <div className="hidden sm:inline">
           <img
             loading="lazy"
-            src={banner}
+            src={banner.src}
             alt=""
             className="object-cover inset-0 w-full"
           />
@@ -32,13 +34,13 @@ const HomePage: React.FC = () => {
         <div className="inline sm:hidden">
           <img
             loading="lazy"
-            src={bannerMobile}
+            src={bannerMobile.src}
             alt=""
             className="object-cover inset-0 w-full"
           />
         </div>
         <div className="absolute px-6 sm:px-8 md:px-[50px] lg:px-[60px] pt-14 w-full">
-          <Header logo={logo} />
+          <Header logo={logo.src} />
           <Hero />
         </div>
         <div className="px-6 sm:px-8 md:px-[50px] lg:px-[60px] w-full flex flex-col">
@@ -83,7 +85,5 @@ const HomePage: React.FC = () => {
       <CTASection />
       <Footer />
     </div>
-  );
-};
-
-export default HomePage;
+  )
+}

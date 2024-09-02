@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
-import users from "@/assets/users.svg";
-import imgOfBannher from "@/assets/img-of-banner.png";
+import React from 'react'
+import Button from './Button'
+import arrouUpRight from './../assets/arrow-up-right.svg'
+import users from '../assets/users.svg'
+import imgOfBannher from '../assets/img-of-banner.png'
 
 const Hero: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       <div className="flex gap-2 items-center self-start mt-6 text-lg leading-5">
         <img
           loading="lazy"
-          src={users}
+          src={users.src}
           alt="User ratings"
           className="object-contain shrink-0 gap-0 self-stretch my-auto aspect-[2.48] w-[151px]"
         />
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         <span className="self-stretch my-auto">Quero criar minha conta</span>
         <img
           loading="lazy"
-          src={arrouUpRight}
+          src={arrouUpRight.src}
           alt=""
           className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
         />
@@ -36,13 +36,13 @@ const Hero: React.FC = () => {
       <div className="inline sm:hidden mt-10 self-end">
         <img
           loading="lazy"
-          src={imgOfBannher}
+          src={imgOfBannher.src}
           alt=""
           className="object-contain inset-0 w-full"
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

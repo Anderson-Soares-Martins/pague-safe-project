@@ -1,9 +1,9 @@
-import React from "react";
-import bgFooter from "./../assets/bg-footer.svg";
-import logo from "./../assets/Logo.svg";
-import facebook from "./../assets/Facebook.svg";
-import linkedin from "./../assets/Linkedin.svg";
-import dc from "./../assets/DC.svg";
+import React from 'react'
+import bgFooter from './../assets/bg-footer.svg'
+import logo from './../assets/Logo.svg'
+import facebook from './../assets/Facebook.svg'
+import linkedin from './../assets/Linkedin.svg'
+import dc from './../assets/DC.svg'
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="flex relative flex-col px-5 md:px-20 pt-12 pb-6 md:pt-24 md:pb-9 w-full min-h-[250px] md:min-h-[381px]">
         <img
           loading="lazy"
-          src={bgFooter}
+          src={bgFooter.src}
           alt=""
           className="object-cover absolute inset-0 w-full h-full"
         />
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col flex-1">
             <img
               loading="lazy"
-              src={logo}
+              src={logo.src}
               alt="Pague Safe logo"
               className="object-contain w-24 md:w-32 aspect-[6.41]"
             />
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               <a href="#" aria-label="Facebook">
                 <img
                   loading="lazy"
-                  src={facebook}
+                  src={facebook.src}
                   alt=""
                   className="object-contain w-7 md:w-8 aspect-square"
                 />
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               <a href="#" aria-label="Linkedin">
                 <img
                   loading="lazy"
-                  src={linkedin}
+                  src={linkedin.src}
                   alt=""
                   className="object-contain w-7 md:w-8 aspect-square"
                 />
@@ -114,14 +114,14 @@ const Footer: React.FC = () => {
           </p>
           <img
             loading="lazy"
-            src={dc}
+            src={dc.src}
             alt="Certification seal"
             className="object-contain aspect-[2.36] w-6 md:w-[26px]"
           />
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

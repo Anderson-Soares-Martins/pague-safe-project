@@ -1,7 +1,7 @@
-import bgCreateAccount from "./../assets/bg-create-account.svg";
-import Button from "./Button";
-import whatsapp from "./../assets/whatsapp.svg";
-import man from "./../assets/man.svg";
+import bgCreateAccount from './../assets/bg-create-account.svg'
+import Button from './Button'
+import whatsapp from './../assets/whatsapp.svg'
+import man from './../assets/man.svg'
 
 const CreateNewAccount: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const CreateNewAccount: React.FC = () => {
       <div className="w-full xl:mx-[113px] relative">
         <img
           loading="lazy"
-          src={bgCreateAccount}
+          src={bgCreateAccount.src}
           alt="Checkout interface demonstration"
           className="object-contain w-full h-full"
         />
@@ -33,7 +33,7 @@ const CreateNewAccount: React.FC = () => {
                 <Button className="flex gap-2 justify-center bg-[#EFFFFA] items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
                   <img
                     loading="lazy"
-                    src={whatsapp}
+                    src={whatsapp.src}
                     alt=""
                     className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                   />
@@ -42,7 +42,7 @@ const CreateNewAccount: React.FC = () => {
               </div>
               <img
                 loading="lazy"
-                src={man}
+                src={man.src}
                 alt="Checkout interface demonstration"
                 className="object-contain absolute  h-[120%] bottom-0 right-16 z-0"
               />
@@ -51,7 +51,7 @@ const CreateNewAccount: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CreateNewAccount;
+export default CreateNewAccount

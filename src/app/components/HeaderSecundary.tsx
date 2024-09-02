@@ -1,12 +1,12 @@
-import React from "react";
-import bgHeaderSecundary from "@/assets/bg-header-secundary.png";
+import React from 'react'
+import bgHeaderSecundary from '../assets/bg-header-secundary.png'
 
 const HeaderSecundary: React.FC = () => {
   return (
     <header className="flex overflow-hidden relative flex-col px-20 py-16 w-full min-h-[266px] max-md:px-5 max-md:max-w-full">
       <img
         loading="lazy"
-        src={bgHeaderSecundary}
+        src={bgHeaderSecundary.src}
         alt=""
         className="object-cover absolute inset-0 size-full"
       />
@@ -36,7 +36,7 @@ const HeaderSecundary: React.FC = () => {
         Política de privacidade
       </h1>
     </header>
-  );
-};
+  )
+}
 
-export default HeaderSecundary;
+export default HeaderSecundary
