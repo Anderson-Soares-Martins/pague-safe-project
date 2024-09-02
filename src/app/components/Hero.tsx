@@ -6,8 +6,8 @@ import imgOfBannher from '../assets/img-of-banner.png'
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex relative flex-col mt-16 mb-0 max-w-full font-semibold text-teal-50 w-[90%] sm:w-1/3">
-      <h1 className="text-clamp1 leading-clamp1 w-full">
+    <section className="flex relative flex-col mt-16 mb-0 max-w-full font-semibold text-teal-50 sm:w-1/3">
+      <h1 className="text-[40px] sm:text-[60px] leading-[52px] w-full">
         Aumento de imediato 98,4% das suas conversões.
       </h1>
       <div className="flex gap-2 items-center self-start mt-6 text-lg leading-5">
