@@ -5,17 +5,17 @@ import man from './../assets/man.svg'
 
 const CreateNewAccount: React.FC = () => {
   return (
-    <section className="flex justify-center items-center relative mt-44 mx-auto w-full text-teal-950 self-center">
+    <section className="flex justify-center items-center relative mt-44 mx-auto w-full text-teal-950 self-center  ">
       <div className="w-full xl:mx-[113px] relative">
         <img
           loading="lazy"
           src={bgCreateAccount.src}
           alt="Checkout interface demonstration"
-          className="object-contain w-full h-full"
+          className="object-contain w-full h-full "
         />
         <div className="absolute flex w-full h-full top-0">
           <div className="flex relative w-full px-[81px] items-center">
-            <div className="flex flex-col justify-center items-start min-w-[40%] px-4 py-6 bg-[#10C78F]">
+            <div className="flex flex-col justify-center items-start min-w-[40%] px-4 py-6 bg-[#10C78F] ">
               <h2 className="text-clamp font-semibold text-start z-10">
                 Quero criar minha
                 <br /> conta na Pague

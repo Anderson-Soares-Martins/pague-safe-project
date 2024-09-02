@@ -5,7 +5,7 @@ import bgSoundRequest from './../assets/bg-sound-request.svg'
 
 const CTASection: React.FC = () => {
   return (
-    <section className="flex overflow-hidden relative flex-col justify-center items-center self-stretch px-20 py-32 mt-40 w-full min-h-[519px] text-teal-950">
+    <section className="flex overflow-hidden relative flex-col justify-center items-center self-stretch px-20 py-32 mt-12 sm:mt-40 w-full min-h-[519px] text-teal-950">
       <img
         loading="lazy"
         src={bgSoundRequest.src}

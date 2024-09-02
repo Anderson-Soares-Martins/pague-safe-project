@@ -9,7 +9,7 @@ import { SlideOutSection } from './SlideOutSection'
 
 const SupportSection: React.FC = () => {
   return (
-    <section className="mt-24 w-full">
+    <section className="mt-12 sm:mt-24 w-full">
       <div className="flex gap-5 flex-col-reverse lg:flex-row">
         <div className="flex w-full lg:w-[57%] justify-center items-center">
           <div className="w-full h-fit relative flex">
@@ -37,7 +37,7 @@ const SupportSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full lg:w-[43%]">
+        <div className="flex flex-col w-full text-center sm:text-start lg:w-[43%]">
           <div className="flex flex-col justify-center self-stretch my-auto w-full max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col w-full text-base leading-6 text-teal-50 max-md:max-w-full">
               <h2 className="text-lg font-bold leading-8 text-emerald-500 max-md:max-w-full">
@@ -60,7 +60,7 @@ const SupportSection: React.FC = () => {
                 <li>Equipe especializada pronta para atender suas dúvidas.</li>
               </ul>
             </div>
-            <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5">
+            <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5 mx-auto sm:mx-0">
               <span className="self-stretch my-auto">
                 Quero criar minha conta
               </span>

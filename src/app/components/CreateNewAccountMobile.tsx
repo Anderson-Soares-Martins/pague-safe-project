@@ -9,7 +9,7 @@ const CreateNewAccountMobile: React.FC = () => {
         loading="lazy"
         src={manMobile.src}
         alt=""
-        className="object-cover absolute inset-0 size-full"
+        className="object-cover absolute inset-0 size-full rounded-3xl"
       />
       <div className="flex relative flex-col justify-center items-center py-8 mb-0 bg-[#10C78F]">
         <h1 className="text-3xl font-semibold leading-8 text-center">

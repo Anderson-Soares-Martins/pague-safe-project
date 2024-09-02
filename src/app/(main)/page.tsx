@@ -22,7 +22,7 @@ import CreateNewAccountMobile from '../components/CreateNewAccountMobile'
 export default function HomePage() {
   return (
     <div className="flex overflow-hidden flex-col items-center bg-[#09160F]">
-      <main className="flex overflow-hidden flex-col self-stretch pb-48 w-full">
+      <main className="flex overflow-hidden flex-col self-stretch pb-12 sm:pb-48 w-full">
         <div className="hidden sm:inline">
           <img
             loading="lazy"
