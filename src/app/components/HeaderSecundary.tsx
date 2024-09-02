@@ -1,11 +1,20 @@
-import React from "react";
 import bgHeaderSecundary from "../assets/bg-header-secundary.png";
+import React, { useState } from "react";
+import Button from "./Button";
+import menu from "../assets/Menu.svg";
+import ModalMobile from "./ModalMobile";
 
 interface HeaderSecundaryProps {
   title: string;
 }
 
 const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleModal = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="flex overflow-hidden relative flex-col px-20 py-16 w-full min-h-[266px] max-md:px-5 max-md:max-w-full">
       <img
@@ -21,7 +30,7 @@ const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
           alt="Pague Safe Logo"
           className="object-contain shrink-0 my-auto max-w-full aspect-[6.13] w-[196px]"
         />
-        <nav className="flex gap-2 items-center">
+        <nav className="gap-2 items-center hidden sm:flex">
           <a
             href="#checkout"
             className="gap-2 self-stretch px-6 py-3.5 my-auto text-teal-50 rounded-xl border border-teal-400 border-solid max-md:px-5"
@@ -35,6 +44,22 @@ const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
             Acessar Gateway
           </a>
         </nav>
+
+        <button className="inline md:hidden" onClick={handleToggleModal}>
+          <img
+            loading="lazy"
+            src={menu.src}
+            alt="Menu"
+            className="object-contain"
+          />
+        </button>
+
+        {/* Modal */}
+        {isOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-center items-center h-dvh">
+            <ModalMobile handleToggleModal={handleToggleModal} />
+          </div>
+        )}
       </div>
       <h1 className="relative self-center mt-20 text-3xl font-semibold leading-loose text-center text-teal-50 max-md:mt-10">
         {title}

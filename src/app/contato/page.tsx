@@ -15,8 +15,8 @@ const Contato: React.FC = () => {
       <div className="flex overflow-hidden flex-col justify-center bg-[#09160F]">
         <Header title="Entre em contato" />
         <main className="flex flex-col items-center w-full max-md:max-w-full">
-          <section className="flex my-16 max-w-full text-sm leading-6 w-[70%] max-md:mt-10 text-[#EFFFFA]">
-            <div className="w-1/2 pr-4">
+          <section className="flex my-16 max-w-full text-sm flex-col sm:flex-row leading-6 gap-8 w-[90%] lg:w-[70%] max-md:mt-10 text-[#EFFFFA]">
+            <div className="w-full sm:w-1/2 pr-4">
               <h1 className="text-[#2CEAB0] font-bold text-2xl mb-4">
                 Para falar conosco, preencha o formulário ao lado ou envie um
                 e-mail.
@@ -69,7 +69,7 @@ const Contato: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
               <form
                 className="flex flex-col self-stretch my-auto text-sm leading-snug text-teal-400 min-w-[240px] w-[489px] max-md:max-w-full"
                 onSubmit={() => {
