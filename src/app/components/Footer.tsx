@@ -76,10 +76,7 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/aviso-de-cookies"
-                  className="opacity-50 hover:opacity-100"
-                >
+                <Link href="/cookies" className="opacity-50 hover:opacity-100">
                   Aviso de cookies
                 </Link>
               </li>
