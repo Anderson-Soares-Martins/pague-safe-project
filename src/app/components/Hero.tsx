@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
         </Link>
       </Button>
 
-      <div className="inline sm:hidden mt-10 self-end">
+      <div className="inline sm:hidden mt-10">
         <img
           loading="lazy"
           src={imgOfBannher.src}
