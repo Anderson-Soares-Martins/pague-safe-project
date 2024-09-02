@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import arrowUpRight from "./../assets/arrow-up-right.svg";
 import Header from "./../components/HeaderSecundary";
 import Footer from "./../components/Footer";
 import envelope from "@/app/assets/envelope.svg";
@@ -122,7 +123,7 @@ const Contato: React.FC = () => {
                   <span className="self-stretch my-auto">Enviar mensagem</span>
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/845a71cb5e80ce07ac27390dd25985640148322b43bdee923f3cd0c78094fc75?placeholderIfAbsent=true&apiKey=5a9d282623aa4233aef0b702c2cfebc6"
+                    src={arrowUpRight}
                     alt=""
                     className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                   />

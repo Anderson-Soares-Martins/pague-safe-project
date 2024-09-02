@@ -1,33 +1,36 @@
-import React from 'react'
-import womanPix from './../assets/woman-pix.png'
-import boletos from './../assets/boleto.png'
-import cards from './../assets/cards.png'
-import clsx from 'clsx'
-import TitleSection from './TitleSection'
+import React from "react";
+import womanPix from "./../assets/woman-pix.png";
+import boletos from "./../assets/boleto.png";
+import cards from "./../assets/cards.png";
+import clsx from "clsx";
+import TitleSection from "./TitleSection";
+import barcode from "@/app/assets/barcode.svg";
+import pixIcon from "@/app/assets/pix-icon.svg";
+import creditCardIcon from "@/app/assets/credit-card-icon.svg";
 
 type PricingCard = {
-  image: string
-  icon: string
-  title: string[]
-}
+  image: string;
+  icon: string;
+  title: string[];
+};
 
 const pricingCards: PricingCard[] = [
   {
     image: cards.src,
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/874cad9017ad6851435a0980e2ea84f0a02f8a5a63c86baa2dbe10698bf5cc34?placeholderIfAbsent=true&apiKey=5a9d282623aa4233aef0b702c2cfebc6',
-    title: ['Cartão de', 'Crédito D+2']
+    icon: creditCardIcon.src,
+    title: ["Cartão de", "Crédito D+2"]
   },
   {
     image: womanPix.src,
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/a9bfadea7a634c8ac98d8c482a215b967a7bf02c5190cc4182456d02ab03636f?placeholderIfAbsent=true&apiKey=5a9d282623aa4233aef0b702c2cfebc6',
-    title: ['PIX D+0']
+    icon: pixIcon.src,
+    title: ["PIX D+0"]
   },
   {
     image: boletos.src,
-    icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/8a09c0c9cb28e29de4002ae05e5b6ecea39e992224d2e89f974bf7df6fce6c5a?placeholderIfAbsent=true&apiKey=5a9d282623aa4233aef0b702c2cfebc6',
-    title: ['Boleto D+0']
+    icon: barcode.src,
+    title: ["Boleto D+0"]
   }
-]
+];
 
 const PricingSection: React.FC = () => {
   return (
@@ -45,10 +48,10 @@ const PricingSection: React.FC = () => {
           >
             <div
               className={clsx(
-                'flex rounded-3xl gap-2 justify-end items-end flex-1 relative',
-                index === 0 && 'bg-[#2CEAB0]',
-                index === 1 && 'bg-[#EFFFFA] overflow-hidden',
-                index === 2 && 'bg-[#2CEAB0] overflow-hidden'
+                "flex rounded-3xl gap-2 justify-end items-end flex-1 relative",
+                index === 0 && "bg-[#2CEAB0]",
+                index === 1 && "bg-[#EFFFFA] overflow-hidden",
+                index === 2 && "bg-[#2CEAB0] overflow-hidden"
               )}
             >
               <img
@@ -56,11 +59,11 @@ const PricingSection: React.FC = () => {
                 src={card.image}
                 alt={`${card.title} illustration`}
                 className={clsx(
-                  'object-contain rounded-none aspect-[0.97] absolute ',
+                  "object-contain rounded-none aspect-[0.97] absolute ",
                   index === 0 &&
-                    'left-[5%] -top-[16%] w-[110%] h-[120%] animate-float',
-                  index === 1 && 'left-[25%] bottom-0 w-[85%]',
-                  index === 2 && 'h-full animate-float'
+                    "left-[5%] -top-[16%] w-[110%] h-[120%] animate-float",
+                  index === 1 && "left-[25%] bottom-0 w-[85%]",
+                  index === 2 && "h-full animate-float"
                 )}
               />
             </div>
@@ -77,7 +80,7 @@ const PricingSection: React.FC = () => {
                     <h2 className="text-lg" key={text + index}>
                       {text}
                     </h2>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -85,7 +88,7 @@ const PricingSection: React.FC = () => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PricingSection
+export default PricingSection;

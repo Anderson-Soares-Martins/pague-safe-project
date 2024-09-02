@@ -1,13 +1,14 @@
-import React from 'react'
-import bgModal from '../assets/bg-modal-mobile.svg'
-import facebook from '../assets/Facebook.svg'
-import linkedin from '../assets/Linkedin.svg'
-import close from '../assets/Fechar.svg'
-import logo from '../assets/Logo.svg'
-import Button from './Button'
+import React from "react";
+import bgModal from "../assets/bg-modal-mobile.svg";
+import facebook from "../assets/Facebook.svg";
+import linkedin from "../assets/Linkedin.svg";
+import close from "../assets/Fechar.svg";
+import logo from "../assets/Logo.svg";
+import Button from "./Button";
+import Link from "next/link";
 
 interface ModalMobileProps {
-  handleToggleModal: () => void
+  handleToggleModal: () => void;
 }
 
 const ModalMobile: React.FC<ModalMobileProps> = ({ handleToggleModal }) => {
@@ -39,9 +40,15 @@ const ModalMobile: React.FC<ModalMobileProps> = ({ handleToggleModal }) => {
           </h1>
           <div className="flex flex-col justify-center items-center mt-14 w-full gap-2">
             <Button className="w-full py-4 rounded-2xl" variant="outline">
-              Acessar Checkout
+              <Link href="https://app.paguesafe.io/login" passHref>
+                Acessar Checkout
+              </Link>
             </Button>
-            <Button className="w-full py-4 rounded-2xl">Acessar Gateway</Button>
+            <Button className="w-full py-4 rounded-2xl">
+              <Link href="https://app.paguesafe.io/login" passHref>
+                Acessar Gateway
+              </Link>
+            </Button>
           </div>
           <footer className="flex flex-col justify-center mt-14 max-w-full w-[166px]">
             <p className="text-sm text-center text-teal-50">
@@ -65,7 +72,7 @@ const ModalMobile: React.FC<ModalMobileProps> = ({ handleToggleModal }) => {
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default ModalMobile
+export default ModalMobile;

@@ -4,7 +4,7 @@ import celular from "./../assets/imagem-celular.svg";
 import bgSound from "./../assets/bg-sound.svg";
 import bgGreen from "./../assets/bg-green.svg";
 import { SlideOutSection } from "./SlideOutSection";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import arrowUpRight from "./../assets/arrow-up-right.svg";
 import Link from "next/link";
 
 const CheckoutSection: React.FC = () => {
@@ -36,7 +36,7 @@ const CheckoutSection: React.FC = () => {
                 </span>
                 <img
                   loading="lazy"
-                  src={arrouUpRight.src}
+                  src={arrowUpRight.src}
                   alt=""
                   className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 />

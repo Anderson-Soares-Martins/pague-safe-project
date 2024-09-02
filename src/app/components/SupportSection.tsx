@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import arrowUpRight from "./../assets/arrow-up-right.svg";
 
 import celular from "./../assets/imagem-celular-2.svg";
 import bgSound from "./../assets/bg-sound-2.svg";
@@ -72,7 +72,7 @@ const SupportSection: React.FC = () => {
                 </span>
                 <img
                   loading="lazy"
-                  src={arrouUpRight.src}
+                  src={arrowUpRight.src}
                   alt=""
                   className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 />

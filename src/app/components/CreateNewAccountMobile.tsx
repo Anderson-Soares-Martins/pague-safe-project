@@ -18,7 +18,11 @@ const CreateNewAccountMobile: React.FC = () => {
         </h1>
         <div className="flex flex-col justify-center items-center mt-4 text-sm font-bold gap-2">
           <Button className="flex justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-            <Link href="https://app.paguesafe.io/register" passHref>
+            <Link
+              href="https://app.paguesafe.io/register"
+              passHref
+              className="flex gap-2"
+            >
               <span className="self-stretch my-auto">Criar conta agora</span>
             </Link>
           </Button>

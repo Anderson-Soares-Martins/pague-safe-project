@@ -1,10 +1,10 @@
-import React from 'react'
-import bgFooter from './../assets/bg-footer.svg'
-import logo from './../assets/Logo.svg'
-import facebook from './../assets/Facebook.svg'
-import linkedin from './../assets/Linkedin.svg'
-import dc from './../assets/DC.svg'
-import Link from 'next/link'
+import React from "react";
+import bgFooter from "./../assets/bg-footer.svg";
+import logo from "./../assets/Logo.svg";
+import facebook from "./../assets/Facebook.svg";
+import linkedin from "./../assets/Linkedin.svg";
+import dc from "./../assets/DC.svg";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               loading="lazy"
               src={logo.src}
               alt="Pague Safe logo"
-              className="object-contain w-24 md:w-32 aspect-[6.41]"
+              className="object-contain w-32 aspect-[6.41]"
             />
             <div className="mt-4 text-sm text-teal-50">
               O seu gateway de pagamento
@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import arrowUpRight from "./../assets/arrow-up-right.svg";
 import bgSoundRequest from "./../assets/bg-sound-request.svg";
 import Link from "next/link";
 
@@ -33,7 +33,7 @@ const CTASection: React.FC = () => {
               </span>
               <img
                 loading="lazy"
-                src={arrouUpRight.src}
+                src={arrowUpRight.src}
                 alt=""
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
               />

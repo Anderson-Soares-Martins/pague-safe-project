@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import arrouUpRight from "./../assets/arrow-up-right.svg";
+import arrowUpRight from "./../assets/arrow-up-right.svg";
 import users from "../assets/users.svg";
 import imgOfBannher from "../assets/img-of-banner.png";
 import Link from "next/link";
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           <span className="self-stretch my-auto">Quero criar minha conta</span>
           <img
             loading="lazy"
-            src={arrouUpRight.src}
+            src={arrowUpRight.src}
             alt=""
             className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
           />
