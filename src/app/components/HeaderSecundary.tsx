@@ -36,13 +36,13 @@ const HeaderSecundary: React.FC<HeaderSecundaryProps> = ({ title }) => {
         </Link>
         <nav className="gap-2 items-center hidden sm:flex">
           <a
-            href="#checkout"
+            href="https://app.paguesafe.io/login"
             className="gap-2 self-stretch px-6 py-3.5 my-auto text-teal-50 rounded-xl border border-teal-400 border-solid max-md:px-5"
           >
             Acessar Checkout
           </a>
           <a
-            href="#gateway"
+            href="https://app.paguesafe.io/login"
             className="gap-2 self-stretch px-6 py-3.5 my-auto bg-teal-400 rounded-xl text-teal-950 max-md:px-5"
           >
             Acessar Gateway

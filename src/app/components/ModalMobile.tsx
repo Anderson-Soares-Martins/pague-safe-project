@@ -17,12 +17,7 @@ const ModalMobile: React.FC<ModalMobileProps> = ({ handleToggleModal }) => {
       <header className="flex items-center justify-between w-full z-40 top-[45px] absolute px-6">
         <img src={logo.src} alt="Logo" className="object-contain" />
         <button className="inline md:hidden" onClick={handleToggleModal}>
-          <img
-            loading="lazy"
-            src={close.src}
-            alt=""
-            className="object-cover "
-          />
+          <img loading="lazy" src={close.src} alt="" className="object-cover" />
         </button>
       </header>
 
