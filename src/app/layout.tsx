@@ -36,31 +36,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* Favicon para navegadores */}
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* Apple Touch Icon */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-
-        {/* Ícones para atalhos na Barra de Tarefas e Área de Trabalho */}
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/icon-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="/icon-512x512.png"
-        />
-      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
