@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import logoBar from "@/app/assets/logoBar.webp";
 import logo from "@/app/assets/Logo.svg";
+import { Head } from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Favicon para navegadores */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Apple Touch Icon */}
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+
+        {/* Ícones para atalhos na Barra de Tarefas e Área de Trabalho */}
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="512x512"
+          href="/icon-512x512.png"
+        />
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );
