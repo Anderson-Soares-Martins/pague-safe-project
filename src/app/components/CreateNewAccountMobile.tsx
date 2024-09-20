@@ -32,13 +32,19 @@ const CreateNewAccountMobile: React.FC = () => {
             </span>
           </div>
           <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-            <img
-              loading="lazy"
-              src={whatsapp.src}
-              alt=""
-              className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-            />
-            <span className="self-stretch my-auto">Entre em contato</span>
+            <Link
+              href="https://api.whatsapp.com/send?phone=551196665-3854&text=Ol%C3%A1,%20estou%20interessado%20em%20criar%20uma%20conta..."
+              passHref
+              className="flex gap-2"
+            >
+              <img
+                loading="lazy"
+                src={whatsapp.src}
+                alt=""
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <span className="self-stretch my-auto">Entre em contato</span>
+            </Link>
           </Button>
         </div>
       </div>
