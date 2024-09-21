@@ -26,19 +26,19 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
         />
       </Link>
       <nav className="gap-2 items-center hidden sm:flex">
-        <Button
-          variant="outline"
-          className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl border border-solid max-md:px-5 "
-        >
-          <Link href="https://app.paguesafe.io/login" passHref>
+        <Link href="https://app.paguesafe.io/login" passHref>
+          <Button
+            variant="outline"
+            className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl border border-solid max-md:px-5 "
+          >
             Acessar Checkout
-          </Link>
-        </Button>
-        <Button className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl max-md:px-5 ">
-          <Link href="https://app.paguesafe.io/login" passHref>
+          </Button>
+        </Link>
+        <Link href="https://app.paguesafe.io/login" passHref>
+          <Button className="gap-2 self-stretch px-6 py-3.5 my-auto rounded-xl max-md:px-5 ">
             Acessar Gateway
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </nav>
       <button className="inline md:hidden" onClick={handleToggleModal}>
         <img

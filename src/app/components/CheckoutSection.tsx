@@ -25,12 +25,8 @@ const CheckoutSection: React.FC = () => {
               Aumente suas vendas oferecendo produtos adicionais. Reconquiste
               clientes que abandonaram seu checkout com envios de e-mail e SMS.
             </p>
-            <Button className="justify-center items-center self-start px-6 py-3 mt-2 rounded-xl min-h-[45px] max-md:px-5">
-              <Link
-                href="https://app.paguesafe.io/register"
-                passHref
-                className="flex gap-2"
-              >
+            <Link href="https://app.paguesafe.io/register" passHref>
+              <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-2 rounded-xl min-h-[45px] max-md:px-5">
                 <span className="self-stretch my-auto">
                   Quero criar minha conta
                 </span>
@@ -40,8 +36,8 @@ const CheckoutSection: React.FC = () => {
                   alt=""
                   className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="flex w-full lg:w-[57%] justify-center items-center">

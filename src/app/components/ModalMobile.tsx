@@ -34,16 +34,16 @@ const ModalMobile: React.FC<ModalMobileProps> = ({ handleToggleModal }) => {
             Acesse nosso Checkout ou o Gateway.
           </h1>
           <div className="flex flex-col justify-center items-center mt-14 w-full gap-2">
-            <Button className="w-full py-4 rounded-2xl" variant="outline">
-              <Link href="https://app.paguesafe.io/login" passHref>
+            <Link href="https://app.paguesafe.io/login" passHref>
+              <Button className="w-full py-4 rounded-2xl" variant="outline">
                 Acessar Checkout
-              </Link>
-            </Button>
-            <Button className="w-full py-4 rounded-2xl">
-              <Link href="https://app.paguesafe.io/login" passHref>
+              </Button>
+            </Link>
+            <Link href="https://app.paguesafe.io/login" passHref>
+              <Button className="w-full py-4 rounded-2xl">
                 Acessar Gateway
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
           <footer className="flex flex-col justify-center mt-14 max-w-full w-[166px]">
             <p className="text-sm text-center text-teal-50">

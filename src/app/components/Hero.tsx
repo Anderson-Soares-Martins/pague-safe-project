@@ -24,12 +24,8 @@ const Hero: React.FC = () => {
         Gateway de alta conversão, segurança, saque rápido, antifraude eficiente
         e alta aprovação. Tudo que o seu negócio precisa em um só lugar.
       </p>
-      <Button className="justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5">
-        <Link
-          href="https://app.paguesafe.io/register"
-          passHref
-          className="flex gap-2"
-        >
+      <Link href="https://app.paguesafe.io/register" passHref>
+        <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5">
           <span className="self-stretch my-auto">Quero criar minha conta</span>
           <img
             loading="lazy"
@@ -37,8 +33,8 @@ const Hero: React.FC = () => {
             alt=""
             className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
           />
-        </Link>
-      </Button>
+        </Button>
+      </Link>
 
       <div className="inline sm:hidden mt-10">
         <img

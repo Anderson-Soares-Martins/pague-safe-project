@@ -61,12 +61,8 @@ const SupportSection: React.FC = () => {
                 <li>Equipe especializada pronta para atender suas dúvidas.</li>
               </ul>
             </div>
-            <Button className="justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5 mx-auto sm:mx-0">
-              <Link
-                href="https://app.paguesafe.io/register"
-                passHref
-                className="flex gap-2"
-              >
+            <Link href="https://app.paguesafe.io/register" passHref>
+              <Button className="flex gap-2 justify-center items-center self-start px-6 py-3 mt-6 text-sm font-bold rounded-xl min-h-[45px] max-md:px-5 mx-auto sm:mx-0">
                 <span className="self-stretch my-auto">
                   Quero criar minha conta
                 </span>
@@ -76,8 +72,8 @@ const SupportSection: React.FC = () => {
                   alt=""
                   className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                 />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

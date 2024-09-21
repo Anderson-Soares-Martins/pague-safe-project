@@ -17,26 +17,21 @@ const CreateNewAccountMobile: React.FC = () => {
           Quero criar minha conta na Pague Safe agora mesmo.
         </h1>
         <div className="flex flex-col justify-center items-center mt-4 text-sm font-bold gap-2">
-          <Button className="flex justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-            <Link
-              href="https://app.paguesafe.io/register"
-              passHref
-              className="flex gap-2"
-            >
+          <Link href="https://app.paguesafe.io/register" passHref>
+            <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
               <span className="self-stretch my-auto">Criar conta agora</span>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
           <div>
             <span className="self-stretch hidden sm:inline my-auto font-bold">
               ou
             </span>
           </div>
-          <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
-            <Link
-              href="https://api.whatsapp.com/send?phone=551196665-3854&text=Ol%C3%A1,%20estou%20interessado%20em%20criar%20uma%20conta..."
-              passHref
-              className="flex gap-2"
-            >
+          <Link
+            href="https://api.whatsapp.com/send?phone=551196665-3854&text=Ol%C3%A1,%20estou%20interessado%20em%20criar%20uma%20conta..."
+            passHref
+          >
+            <Button className="flex gap-2 justify-center bg-[#EFFFFA] hover:bg-[#EFFFFA]/90 items-center px-6 py-3.5 text-sm font-bold rounded-xl max-md:px-5">
               <img
                 loading="lazy"
                 src={whatsapp.src}
@@ -44,8 +39,8 @@ const CreateNewAccountMobile: React.FC = () => {
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
               />
               <span className="self-stretch my-auto">Entre em contato</span>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
