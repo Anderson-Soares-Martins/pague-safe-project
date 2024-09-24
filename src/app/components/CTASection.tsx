@@ -23,7 +23,7 @@ const CTASection: React.FC = () => {
             contato conosco.
           </p>
           <Link
-            href="https://api.whatsapp.com/send?phone=551196665-3854&text=Ol%C3%A1,%20faturo%20mais%20que%20R$100k%20por%20m%C3%AAs%20e%20queria%20negociar%20as%20taxas..."
+            href="https://api.whatsapp.com/send?phone=551699875-3742&text=Ol%C3%A1,%20faturo%20mais%20que%20R$100k%20por%20m%C3%AAs%20e%20queria%20negociar%20as%20taxas..."
             passHref
           >
             <Button className="flex gap-2 justify-center items-center px-6 py-3.5 mt-4 text-sm font-bold rounded-xl max-md:px-5">
