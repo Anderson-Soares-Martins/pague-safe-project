@@ -41,7 +41,20 @@ const partners = [
 
 const PartnerSection: React.FC = () => {
   return (
-    <section className="mt-9 w-full">
+    <section className="w-full">
+      <div className="flex flex-col justify-center items-center mt-20 sm:mt-28 max-w-full text-center text-teal-50 w-full">
+        <h2 className="self-stretch text-lg font-bold leading-8 text-emerald-500 max-md:max-w-full">
+          Mais sobre a Pague Safe
+        </h2>
+        <h3 className="mt-2 text-4xl font-semibold leading-10 w-[748px] max-md:max-w-full">
+          Uma Plataforma de pagamento poderosa e exclusiva
+        </h3>
+        <p className="mt-2 text-sm leading-6 opacity-70 w-[660px] max-md:max-w-full">
+          Com a Pague Safe, você tem tudo o que precisa para aumentar seu
+          faturamento: Gateway de Alta conversão e Checkout personalizável.
+        </p>
+      </div>
+
       <h2 className="text-2xl font-semibold leading-8 text-center text-teal-50 w-full mb-6">
         Pague Safe tem os melhores parceiros e métodos de pagamento para dar
         suporte e segurança a sua operação.

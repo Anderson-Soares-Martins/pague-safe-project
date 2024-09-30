@@ -15,17 +15,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pague Safe - Aumente suas Conversões com Segurança",
     description:
-      "Com o gateway Pague Safe, você alcança 98,4% de conversão, garantindo segurança, saque rápido e antifraude eficiente.",
-    url: "https://www.paguesafe.com",
-    images: [
-      {
-        url: logo.src,
-        width: 800,
-        height: 600,
-        alt: "Pague Safe Logo"
-      }
-    ],
-    siteName: "Pague Safe"
+      "A Pague Safe oferece um gateway de alta conversão com checkout personalizável, segurança e alta taxa de aprovação. Ideal para e-commerce e infoprodutos. Saiba mais e aumente seu faturamento!",
+    images: [{ url: logo.src, alt: "Logo da Pague Safe" }]
   }
 };
 

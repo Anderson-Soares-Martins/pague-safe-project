@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ logo }) => {
           </Button>
         </Link>
       </nav>
-      <button className="inline md:hidden" onClick={handleToggleModal}>
+      <button className="inline sm:hidden" onClick={handleToggleModal}>
         <img
           loading="lazy"
           src={menu.src}
