@@ -123,7 +123,7 @@ const Contato: React.FC = () => {
                   <span className="self-stretch my-auto">Enviar mensagem</span>
                   <img
                     loading="lazy"
-                    src={arrowUpRight}
+                    src={arrowUpRight.src}
                     alt=""
                     className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
                   />
