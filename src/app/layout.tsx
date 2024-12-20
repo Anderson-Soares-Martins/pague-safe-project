@@ -1,10 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import logoBar from "@/app/assets/logoBar.webp";
 import logo from "@/app/assets/Logo.svg";
-import { Head } from "next/document";
+import Metadata from "next";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,14 +31,12 @@ export default function RootLayout({
       <head>
         {/* Favicon para navegadores */}
         <link rel="icon" href="/favicon.ico" />
-
         {/* Apple Touch Icon */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-
         {/* Ícones para atalhos na Barra de Tarefas e Área de Trabalho */}
         <link
           rel="icon"
@@ -53,6 +51,8 @@ export default function RootLayout({
           href="/icon-512x512.png"
         />
       </head>
+
+      <GoogleTagManager gtmId="GTM-WVXNGLCV" />
       <body className={inter.className}>
         {children}
         <Analytics />
